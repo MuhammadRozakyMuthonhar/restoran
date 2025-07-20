@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>@yield('title', 'Restorun')</title>
+        <title>@yield('title', 'Pondok KangNaryo')</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,7 +16,7 @@
     <body>
 
     <header id="header" class="header fixed-top d-flex align-items-center">
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-white shadow">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white shadow">
             <div class="container">
                 <a class="navbar-brand" href="{{ route('home') }}">
     <img src="{{ asset('images/logo.png') }}" alt="Kang Naryo Logo" style="height: 50px;"></a>
@@ -26,18 +26,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            {{-- Warna tulisan diubah menjadi hitam --}}
+
                             <a class="nav-link" href="{{ route('home') }}" style="color: black !important;">Home</a>
                         </li>
-                        {{-- Link ke section di halaman home --}}
-                        {{-- <li class="nav-item"><a class="nav-link" href="{{ route('home') }}#about">Tentang Kita</a></li> --}}
-                        {{-- Link ke halaman baru --}}
+
                         <li class="nav-item">
-                             {{-- Warna tulisan diubah menjadi hitam --}}
+
                             <a class="nav-link" href="{{ route('menu.page')  }}" style="color: black !important;">Menu</a>
                         </li>
                         <li class="nav-item">
-                             {{-- Warna tulisan diubah menjadi hitam --}}
+
                             <a class="nav-link" href="{{ route('gallery.page') }}" style="color: black !important;">Galeri</a>
                         </li>
                     </ul>
